@@ -1,15 +1,19 @@
 <template>
   <div class="app-wrapper">
     <div class="app">
+      <Navigation />
       <router-view />
     </div>
   </div>
 </template>
 
 <script>
+import Navigation from "@/components/Navigation";
 export default {
   name: "app",
-  components: {},
+  components: {
+    Navigation
+  },
   data() {
     return {};
   },
@@ -37,7 +41,7 @@ export default {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
